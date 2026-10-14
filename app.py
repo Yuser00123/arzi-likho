@@ -222,7 +222,7 @@ with gr.Blocks(title="अर्ज़ी लिखो") as demo:
                 for _ in range(POOL_SIZE["textarea"]):
                     pool_comps.append(gr.Textbox(visible=False, lines=3))
                 for _ in range(POOL_SIZE["select"]):
-                    pool_comps.append(gr.Dropdown(visible=False))
+                    pool_comps.append(gr.Dropdown(visible=False, allow_custom_value=True))
             go_btn = gr.Button("🪶 अर्ज़ी बनाओ", variant="primary", elem_classes=["lg"])
 
         status_md = gr.Markdown()
