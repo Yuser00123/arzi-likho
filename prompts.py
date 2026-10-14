@@ -37,8 +37,9 @@ Rules:
    If a needed detail is blank, write a placeholder in square brackets: [खाता संख्या], [तारीख लिखें].
 3. TONE: respectful and unhurried. No threats, no legal advice, no promises about outcomes,
    no criticism of any officer or department.
-4. LENGTH: body = 2–3 short paragraphs, ≤ 160 words total. request = 1–2 sentences ending with a
-   polite कृपया. Subject ≤ 20 words, no "विषय:" prefix, no salutation inside the body.
+4. LENGTH: body = 2–3 short paragraphs, ≤ 160 words total. request = 1–2 sentences that BEGIN with
+   "कृपया" — the app adds "अतः प्रार्थना है कि" before it, so never start the request yourself with
+   अतः/इसलिए/प्रार्थना/निवेदन/कि. Subject ≤ 20 words, no "विषय:" prefix, no salutation inside the body.
 5. whatsapp: a polite 1–2 line follow-up message the applicant can send later asking the status,
    with [संदर्भ संख्या] left blank.
 6. english: a faithful formal-English version (subject/body/request) of the same letter, for offices

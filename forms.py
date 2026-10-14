@@ -238,7 +238,7 @@ MATTERS: List[dict] = [
         "online": "112 (आपातकालीन) · uppolice.gov.in → ऑनलाइन शिकायत",
         "helpline": "112",
         "attachments": ["पहचान पत्र की प्रति", "चोट का मेडिकल (यदि हो)", "सबूत / गवाहों का विवरण (यदि हो)"],
-        "subject_fn": lambda f: f"दिनांक {sv(f, 'incident_date', 'तारीख लिखें')} को {sv(f, 'place', 'स्थान लिखें')} में घटित घटना की शिकायत",
+        "subject_fn": lambda f: f"दिनांक {sv(f, 'incident_date', 'तारीख लिखें')} को घटित घटना ({sv(f, 'place', 'स्थान लिखें')}) की शिकायत",
         "subject_en": "Complaint regarding an incident",
         "facts": [
             lambda f: f"दिनांक {sv(f, 'incident_date', 'तारीख लिखें')} को {sv(f, 'place', 'स्थान लिखें')} में मेरे साथ निम्नलिखित घटना घटी — {sv(f, 'detail', 'घटना लिखें')}",

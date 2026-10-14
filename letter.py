@@ -64,6 +64,25 @@ def kahan_box(matter: dict) -> str:
     return "\n\n".join(rows)
 
 
+# Leading connectives the model sometimes prepends to the request — the letter's
+# "अतः प्रार्थना है कि ..." prefix already does that job.
+_REQ_LEADS = ("अतः", "अत:", "इसलिए", "प्रार्थना है कि", "आपसे विनम्र निवेदन है कि", "विनम्र निवेदन है कि", "निवेदन है कि", "कि")
+
+
+def _clean_request(r: str) -> str:
+    r = (r or "").strip()
+    changed = True
+    while changed and r:
+        changed = False
+        for w in _REQ_LEADS:
+            if r == w:
+                return ""
+            if r.startswith(w + " "):
+                r = r[len(w):].strip()
+                changed = True
+    return r
+
+
 def compose(matter: dict, district: str, fields: Dict[str, str], draft: dict) -> Dict[str, str]:
     """Everything the UI needs: the editable letter text + the boxes around it."""
     if matter.get("style") == "biodata":
@@ -85,7 +104,7 @@ def compose(matter: dict, district: str, fields: Dict[str, str], draft: dict) ->
         "",
         *"\n\n".join(paras).split("\n"),
         "",
-        f"अतः प्रार्थना है कि {draft.get('request', matter['request'])}",
+        f"अतः प्रार्थना है कि {_clean_request(draft.get('request') or matter['request'])}",
         "",
         "भवदीय,",
         forms.sv(fields, "name", "नाम लिखें"),
