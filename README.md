@@ -70,9 +70,17 @@ LLM_PROVIDER=openai LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=gemma3:4b p
 
 ## Screenshots
 
-| होम — काम चुनें | तैयार अर्ज़ी + कहाँ जमा करें |
+एक असली रायबरेली केस के साथ, लाइव ऐप से (phone-sized browser):
+
+| काम चुनें (12 अर्ज़ियाँ) | फ़ॉर्म भरें — 8 जानकारियाँ |
 |---|---|
-| *(जल्द जोड़े जाएँगे)* | *(जल्द जोड़े जाएँगे)* |
+| ![12 अर्ज़ियों की सूची खुली हुई](https://raw.githubusercontent.com/Yuser00123/arzi-likho/main/docs/screenshots/1-home.png) | ![RTI फ़ॉर्म भरा हुआ](https://raw.githubusercontent.com/Yuser00123/arzi-likho/main/docs/screenshots/2-form.png) |
+
+| Gemma लिख रहा है | तैयार अर्ज़ी + कहाँ जमा करें |
+|---|---|
+| ![status: Gemma आपकी अर्ज़ी लिख रहा है](https://raw.githubusercontent.com/Yuser00123/arzi-likho/main/docs/screenshots/3-generating.png) | ![पूरी RTI अर्ज़ी और कहाँ जमा करें बॉक्स](https://raw.githubusercontent.com/Yuser00123/arzi-likho/main/docs/screenshots/4-letter.png) |
+
+कहाँ जमा करें बॉक्स अलग से: `docs/screenshots/5-kahan.png`
 
 ## सावधानी (इसीलिए भरोसेमंद)
 
